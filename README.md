@@ -20,7 +20,7 @@ dotnet user-secrets init
 ### Step 2: Set the Connection String
 Set the connection string using the following command, replacing `{SERVER_NAME}` with your actual SQL Server instance name:
 ```bash
-dotnet user-secrets set "ConnectionStrings:DefaultConnection" "Data Source={SERVER_NAME}\\SQLEXPRESS;Initial Catalog=CampusSync.APi;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
+dotnet user-secrets set "ConnectionStrings:DefaultConnection" "Data Source={SERVER_NAME};Initial Catalog=CampusSync.APi;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
 ```
 
 ### Step 3: Configure `appsettings.json`
